@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "TradingView Watchlist Backtester",
+    "version": "1.0",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://*.tradingview.com/chart/*"],
+    "content_scripts": [
+      {
+        "js": ["content.js"],
+        "matches": ["https://*.tradingview.com/chart/*"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
